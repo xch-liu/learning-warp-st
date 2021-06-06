@@ -10,6 +10,15 @@ This is the code for the paper
   
   Our method performs non-parametric warping to match artistic geometric style. The above shows content, style (geometry+texture), and output images for a Picasso style transfer (left) and a Salvaor Dali style transfer (right).
 
+If you find this code useful for your research, please cite
+```
+@InProceedings{Liu21LWST, 
+  author={Xiao-Chang Liu and Yong-Liang Yang and Peter Hall},
+  title={Learning to Warp for Style Transfer},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021}
+}
+```
 
 ## Preresquisites
 
@@ -19,8 +28,13 @@ Dependencies:
 
 Pre-trained Models:
 * Download the model for geometric warping:
+ ```
+ cd geometric_style_transfer
+ python models/download_models.py
+ ```
 * Download the model for texture rendering:
  ```
+ cd texture_style_transfer
  python models/download_models.py
  ```
 
@@ -28,21 +42,14 @@ Pre-trained Models:
 
 ### 1. Run geometric style transfer to warp the content image:
 ```
-geo_warping.m
+cd geometric_style_transfer
+run geo_warping.m --STYLE_IMAGE --CONTENT_IMAGE
 ```
+
+After warping, empty background regions (if appear) are inpainted with pixels nearby.
 
 ### 2. Run texture style transfer to render the warped image:
 ```
-sh mults_st.sh
-```
-
-
-If you find this code useful for your research, please cite
-```
-@InProceedings{Liu21LWST, 
-  author={Xiao-Chang Liu and Yong-Liang Yang and Peter Hall},
-  title={Learning to Warp for Style Transfer},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2021}
-}
+cd texture_style_transfer
+run mults_st.sh --STYLE_IMAGE --CONTENT_IMAGE --STYLE_WEIGHT
 ```
