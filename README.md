@@ -43,7 +43,7 @@ Pre-trained Models:
 ### 1. Run geometric style transfer to warp the content image:
 ```
 cd geometric_style_transfer
-run geo_warping.m --STYLE_IMAGE --CONTENT_IMAGE
+run geo_warping.m [--STYLE_IMAGE] [--CONTENT_IMAGE]
 ```
 
 After warping, empty background regions (if appear) are inpainted with pixels nearby.
@@ -51,5 +51,5 @@ After warping, empty background regions (if appear) are inpainted with pixels ne
 ### 2. Run texture style transfer to render the warped image:
 ```
 cd texture_style_transfer
-run mults_st.sh --STYLE_IMAGE --CONTENT_IMAGE --STYLE_WEIGHT
+run mults_st.sh [--STYLE_IMAGE] [--CONTENT_IMAGE] [--STYLE_WEIGHT]
 ```
