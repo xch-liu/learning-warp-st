@@ -35,7 +35,7 @@ Pre-trained Models:
 * Download the model for texture rendering
  ```
  cd texture_rendering
- python model/download_model.py
+ python models/download_model.py
  ```
 
 ## Usage
