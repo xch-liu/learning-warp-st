@@ -27,15 +27,15 @@ Dependencies:
 * Texture Rendering: [PyTorch](http://pytorch.org/), [CUDA](https://developer.nvidia.com/cuda-downloads) and [cuDNN](https://developer.nvidia.com/cudnn)
 
 Pre-trained Models:
-* Download the model for geometric warping:
+* Download the [model](https://drive.google.com/uc?id=1PJJQ0KG2JYfJZDkU4ZOePndKJw63d7Yr&export=download) for geometric warping
  ```
  cd geometric_warping
- python models/download_models.py
+ mkdir model
  ```
-* Download the model for texture rendering:
+* Download the model for texture rendering
  ```
  cd texture_rendering
- python models/download_model.py
+ python model/download_model.py
  ```
 
 ## Usage
