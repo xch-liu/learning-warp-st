@@ -29,20 +29,20 @@ Dependencies:
 Pre-trained Models:
 * Download the model for geometric warping:
  ```
- cd geometric_style_transfer
+ cd geometric_warping
  python models/download_models.py
  ```
 * Download the model for texture rendering:
  ```
- cd texture_style_transfer
- python models/download_models.py
+ cd texture_rendering
+ python models/download_model.py
  ```
 
 ## Usage
 
 ### 1. Run geometric style transfer to warp the content image:
 ```
-cd geometric_style_transfer
+cd geometric_warping
 run geo_warping.m [--STYLE_IMAGE] [--CONTENT_IMAGE]
 ```
 
@@ -50,6 +50,6 @@ After warping, empty background regions (if appear) are inpainted with pixels ne
 
 ### 2. Run texture style transfer to render the warped image:
 ```
-cd texture_style_transfer
-run mults_st.sh [--STYLE_IMAGE] [--CONTENT_IMAGE] [--STYLE_WEIGHT]
+cd texture_rendering
+run multi_scale_st.sh [--STYLE_IMAGE] [--CONTENT_IMAGE] [--STYLE_WEIGHT]
 ```
