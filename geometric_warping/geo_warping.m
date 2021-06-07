@@ -14,7 +14,7 @@ net.vars(net.getVarIndex('comp_iter4_flow_transform_x1')).precious = 1;
 
 %% Read content image and style image
 CONTENT_IMAGE = imread('inputs/clock.png');
-STYLE_IMAGE = imread('inputs/dali_melting_clock.g');
+STYLE_IMAGE = imread('inputs/dali_melting_clock.png');
 
 %% Original size of content image and style image
 [heightS_Ori, widthS_Ori, dimS_Ori] = size(STYLE_IMAGE);
