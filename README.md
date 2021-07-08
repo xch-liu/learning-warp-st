@@ -2,7 +2,7 @@ This is the code for the paper
 
 # Learning to Warp for Style Transfer
 
-### [Project Page](https://github.com/xch-liu/learning-warp-st) | [Paper](https://github.com/xch-liu/learning-warp-st) | [Poster](https://github.com/xch-liu/learning-warp-st) | [Video](https://github.com/xch-liu/learning-warp-st)
+### [Project Page](https://github.com/xch-liu/learning-warp-st) | [Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Learning_To_Warp_for_Style_Transfer_CVPR_2021_paper.pdf) | [Poster](https://github.com/xch-liu/learning-warp-st) | [Video](https://github.com/xch-liu/learning-warp-st)
 
 <p align='center'>
   <img src='images/teaser.jpg' height="140px">
