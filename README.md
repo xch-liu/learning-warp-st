@@ -10,6 +10,11 @@ This is the code for the paper
   
   Our method performs non-parametric warping to match artistic geometric style. The above shows content, style (geometry+texture), and output images for a Picasso style transfer (left) and a Salvaor Dali style transfer (right).
 
+
+https://user-images.githubusercontent.com/58788896/124906358-e30dd380-dfde-11eb-99b2-b7b640a6a8d9.mov
+
+
+
 If you find this code useful for your research, please cite
 ```
 @InProceedings{Liu21LWST, 
